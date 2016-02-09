@@ -50,12 +50,13 @@ table {
 p {
   padding: 10px;
   color: #00FF00;
+  font-weight: 500;
   }
 body{
   font-family: Courier, monospace;
-  font-size: 0.875em; /* 14px ctx 16px */
-  line-height: 1.5em; /* 21px ctx 14px */
-  padding-top: 1.5em; /* 21px ctx 14px */
+  font-size: 1em; /*  16px */
+  line-height: 1.3125em; /* 21px ctx 16px */
+  padding-top: 1.3125em; /* 21px ctx 16px */
   padding-left: 1em;
   padding-right: 1em;
   text-size-adjust: 100%;
@@ -64,7 +65,7 @@ body{
 h1 {
   color: #FFFFFF;
   font-family: Courier, monospace;
-  font-size: 2.143em; /* 30px ctx 14px */
+  font-size: 1.875em; /* 30px ctx 16px */
   line-height: 1.3667em;
   padding-top: 0.7em; /* 21px ctx 30px */
   padding-left: 0.4667em; /* 14px ctx 30px */

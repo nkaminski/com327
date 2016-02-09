@@ -12,11 +12,11 @@
       };
       function blink() {
         if(added == 0){
-          document.getElementById("bc").innerHTML = document.getElementById("bc").innerHTML.slice(0,-5);
+          document.getElementById("bc").innerHTML = document.getElementById("bc").innerHTML.slice(0,-1);
           added = 1;
         }
         else{
-          document.getElementById("bc").innerHTML += '<br>&#x258A;';
+          document.getElementById("bc").innerHTML += '&#x258A;';
           added = 0;
         }
         window.setTimeout(blink,500);
