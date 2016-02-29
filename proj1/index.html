@@ -4,15 +4,19 @@
     <title>Nash Kaminski</title>
     <link rel="stylesheet" type="text/css" href="theme.css">
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <script type="text/javascript">
       var added = 1;
+      window.onload = function() {
+	blink();
+      };
       function blink() {
         if(added == 0){
-          document.getElementById("bc").innerHTML = document.getElementById("bc").innerHTML.slice(0,-5);
+          document.getElementById("bc").innerHTML = document.getElementById("bc").innerHTML.slice(0,-1);
           added = 1;
         }
         else{
-          document.getElementById("bc").innerHTML += '<br>&#x258A;';
+          document.getElementById("bc").innerHTML += '&#x258A;';
           added = 0;
         }
         window.setTimeout(blink,500);
@@ -20,19 +24,29 @@
     </script>
 
   </head>
-  <body onload="blink()">
+  <body>
     <h1>Nash Kaminski</h1>
-    <div id='background'>
-      <p>My name is Nash Kaminski and I am currently pursuing a BS and MS in computer engineering coterminally at Illinois Institute of Technology. Ever since I was rather young, I have always been very curious as to why and how things work and why certain events happen as they do. Furthermore, I have also had a strong interest in electronics and computers. My first experiences with such go back as early as grade school, creating simple electric circuits that over time evolved into progressively more advanced ones as well as many hours of playing retro games and tinkering in visual BASIC on my first computer, an  Apple IIc. Owing to my strong work ethic and desire to learn, I have continued to advance over the years in terms of knowledge and problem solving capability and have since been involved in progressively more involved pursuits. As more time passed, I also became more and more certain that I would like to pursue a future where I could apply such knowledge in a practical manner. Therefore, I have chosen to study computer engineering and envision myself working in the field of computer hardware design in the near future.</p>
-    </div>
-    <div id='amb_iit'>
-      <p>Therefore, my main goals during my career at IIT are to continue advance not only my own knowledge, but also the knowledge of those whom I work with. In the process of such, I also would like to network with peers having similar interests. In addition to being very advantageous after my career at IIT, this also facilitates some of the most enjoyable engineering projects that I have been involved in. An excellent example of such has been my extensive involvement in the student organization Illinois Tech Robotics, since my 2nd week at IIT. Illinois Tech Robotics, or ITR for short is a very large interdisciplinary organization that is involved with more than simply robotics. ITR does participate in 2-3 large competitive events per year, typically the IIT pumpkin launch and the Midwest Regional Design competition. In addition, there is also a large amount of ITR that is primarily involved in so called hackerspace projects, or small projects of a few individuals which can range form anything to small pieces of software to considerably involved pieces of hardware and software. All of the projects that I have been a part of have been an excellent opportunity to not only share and apply knowledge, but also to solve an often challenging problem in an interesting and fun manner. I will say there is quite the sense of accomplishment when you are part of the team that takes 1st place in a competitive event, in this case the IIT pumpkin launch, by cooperating to build a nearly 15 foot tall machine capable of releasing pumpkins with millisecond timing at a speed of over 100 mph while still maintaining over 80% accuracy.</p>
-    </div>
-    <div id="amb_course">
-      <p>Furthermore, my ambitions in this course are to further my skills in not only web design, but user interface design in general. Being primarily involved in working with very low level software as well as the related programs, I tend to opt almost exclusively for command line interfaces to applications that I build unless there is a very compelling reason to design a graphical interface. Furthermore, by UI design skills are currently somewhat limited with many of my UI's in general somewhat lacking with respect to other ones. Therefore, throughout this course, I would like to further by skills in the areas of not only web page design, but user interface design in general such that I can develop well designed, responsive, and easy to use web pages and similar user interfaces on par with today's standards.</p>
-    </div>
-    <div id="amb_postiit">
-      <p id="bc">Beyond my career at IIT, I would like to apply my knowledge in a cooperative manner with others in a way that has a significant impact on a field of science and technology. Modern technology is fueled by a continuing stream of breakthroughs and advancements in science and technology, each of which represents a major challenge requiring the cooperative efforts of often a relatively large, interdisciplinary set of individuals to overcome. I enjoy the challenge of facing a problem or limitation and working to design and implement a creative solution to such problem; this was one of my main motivations for choosing to study engineering in the first place. Therefore, beyond my career at IIT, I would like to apply my computer engineering skills in the workplace so as to ideally contribute to a major advancement in the field of computer hardware design and feel that all of the knowledge and skills that I will develop during my career at IIT will help me  accomplish such goal.</p>
-    </div>
+      <p>My name is Nash Kaminski and I am currently pursuing a BS and MS in computer engineering coterminally at Illinois Institute of Technology. 
+Ever since I was rather young, I have always been very curious as to why and how things work and why certain events happen as they do. Furthermore, I have also had a strong interest in electronics and computers. 
+My first experiences with such go back as early as grade school, creating simple electric circuits that over time evolved into progressively more advanced ones as well as many hours of playing retro games and tinkering in visual BASIC on my first computer, an  Apple IIc. 
+Owing to my strong work ethic and desire to learn, I have continued to advance over the years in terms of knowledge and problem solving capability and have since been involved in progressively more involved pursuits. 
+As more time passed, I also became more and more certain that I would like to pursue a future where I could apply such knowledge in a practical manner. 
+Therefore, I have chosen to study computer engineering and envision myself working in the field of computer hardware design in the near future.</p>
+      <p>Therefore, my main goals during my career at IIT are to continue advance not only my own knowledge, but also the knowledge of those whom I work with. 
+In the process of such, I also would like to network with peers having similar interests. 
+In addition to being very advantageous after my career at IIT, this also facilitates some of the most enjoyable engineering projects that I have been involved in. An excellent example of such has been my extensive involvement in the student organization Illinois Tech Robotics, 
+since my 2nd week at IIT. Illinois Tech Robotics, or ITR for short is a very large interdisciplinary organization that is involved with more than simply robotics. ITR does participate in 2-3 large competitive events per year, typically the IIT pumpkin launch and the Midwest Regional Design competition. 
+In addition, there is also a large amount of ITR that is primarily involved in so called hackerspace projects, or small projects of a few individuals which can range form anything to small pieces of software to considerably involved pieces of hardware and software. 
+All of the projects that I have been a part of have been an excellent opportunity to not only share and apply knowledge, but also to solve an often challenging problem in an interesting and fun manner. I will say there is quite the sense of accomplishment when you are part of the team that takes 1st place in a competitive event, 
+in this case the IIT pumpkin launch, by cooperating to build a nearly 15 foot tall machine capable of releasing pumpkins with millisecond timing at a speed of over 100 mph while still maintaining over 80% accuracy.</p>
+      <p>Furthermore, my ambitions in this course are to further my skills in not only web design, but user interface design in general. 
+Being primarily involved in working with very low level software as well as the related programs, I tend to opt almost exclusively for command line interfaces to applications that I build unless there is a very compelling reason to design a graphical interface. 
+Furthermore, by UI design skills are currently somewhat limited with many of my UI's in general somewhat lacking with respect to other ones. 
+Therefore, throughout this course, I would like to further by skills in the areas of not only web page design, but user interface design in general such that I can develop well designed, responsive, and easy to use web pages and similar user interfaces on par with today's standards.</p>
+      <p id="bc">Beyond my career at IIT, I would like to apply my knowledge in a cooperative manner with others in a way that has a significant impact on a field of science and technology. 
+Modern technology is fueled by a continuing stream of breakthroughs and advancements in science and technology, each of which represents a major challenge requiring the cooperative efforts of often a relatively large, interdisciplinary set of individuals to overcome. 
+I enjoy the challenge of facing a problem or limitation and working to design and implement a creative solution to such problem; this was one of my main motivations for choosing to study engineering in the first place. 
+Therefore, beyond my career at IIT, I would like to apply my computer engineering skills in the workplace so as to ideally contribute to a major advancement in the field of computer hardware design and feel that all of the knowledge and skills that I will develop during my career at IIT will help me 
+accomplish such goal.</p>
   </body>
 </html>
